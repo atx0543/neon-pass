@@ -4,7 +4,7 @@
   <meta charset="Shift_JIS">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
-  <title>NEON PASS - パスワードジェネレーター</title>
+  <title>NEON PASS - &#12497;&#12473;&#12527;&#12540;&#12489;&#12472;&#12455;&#12493;&#12524;&#12540;&#12479;&#12540;</title>
   <style>
     :root {
       --bg: #080b16;
@@ -342,18 +342,18 @@
     <header class="hero">
       <div class="eyebrow"><span class="status-dot"></span>SECURE GENERATOR</div>
       <h1>NEON PASS</h1>
-      <p class="subtitle">推測されにくいパスワードを、あなたの端末内だけで瞬時に生成します。</p>
+      <p class="subtitle">&#25512;&#28204;&#12373;&#12428;&#12395;&#12367;&#12356;&#12497;&#12473;&#12527;&#12540;&#12489;&#12434;&#12289;&#12354;&#12394;&#12383;&#12398;&#31471;&#26411;&#20869;&#12384;&#12369;&#12391;&#30636;&#26178;&#12395;&#29983;&#25104;&#12375;&#12414;&#12377;&#12290;</p>
     </header>
 
-    <section class="app-card" aria-label="パスワード作成ツール">
+    <section class="app-card" aria-label="&#12497;&#12473;&#12527;&#12540;&#12489;&#20316;&#25104;&#12484;&#12540;&#12523;">
       <div class="password-panel">
         <div class="password-row">
-          <input id="password" type="text" readonly aria-label="生成されたパスワード" spellcheck="false">
-          <button class="icon-btn" id="copyButton" type="button" title="コピー" aria-label="パスワードをコピー">&#9635;</button>
-          <button class="icon-btn" id="refreshButton" type="button" title="再生成" aria-label="パスワードを再生成">&#8635;</button>
+          <input id="password" type="text" readonly aria-label="&#29983;&#25104;&#12373;&#12428;&#12383;&#12497;&#12473;&#12527;&#12540;&#12489;" spellcheck="false">
+          <button class="icon-btn" id="copyButton" type="button" title="&#12467;&#12500;&#12540;" aria-label="&#12497;&#12473;&#12527;&#12540;&#12489;&#12434;&#12467;&#12500;&#12540;">&#9635;</button>
+          <button class="icon-btn" id="refreshButton" type="button" title="&#20877;&#29983;&#25104;" aria-label="&#12497;&#12473;&#12527;&#12540;&#12489;&#12434;&#20877;&#29983;&#25104;">&#8635;</button>
         </div>
         <div class="strength-head">
-          <span>推定強度</span>
+          <span>&#25512;&#23450;&#24375;&#24230;</span>
           <span id="strengthLabel">---</span>
         </div>
         <div class="strength-track" aria-hidden="true"><div id="strengthBar"></div></div>
@@ -362,34 +362,34 @@
       <div class="settings-grid">
         <div class="setting-card">
           <div class="length-head">
-            <h2 class="card-title">パスワードの長さ</h2>
+            <h2 class="card-title">&#12497;&#12473;&#12527;&#12540;&#12489;&#12398;&#38263;&#12373;</h2>
             <output class="length-value" id="lengthValue" for="lengthRange">18</output>
           </div>
-          <input id="lengthRange" type="range" min="8" max="64" value="18" aria-label="パスワードの長さ">
-          <div class="range-labels"><span>8文字</span><span>64文字</span></div>
+          <input id="lengthRange" type="range" min="8" max="64" value="18" aria-label="&#12497;&#12473;&#12527;&#12540;&#12489;&#12398;&#38263;&#12373;">
+          <div class="range-labels"><span>8&#25991;&#23383;</span><span>64&#25991;&#23383;</span></div>
         </div>
 
         <div class="setting-card">
-          <h2 class="card-title">使用する文字</h2>
+          <h2 class="card-title">&#20351;&#29992;&#12377;&#12427;&#25991;&#23383;</h2>
           <div class="option-list">
             <label class="option">
-              <span class="option-copy">英大文字 <small>A-Z</small></span>
+              <span class="option-copy">&#33521;&#22823;&#25991;&#23383; <small>A-Z</small></span>
               <input id="upper" type="checkbox" checked><span class="switch"></span>
             </label>
             <label class="option">
-              <span class="option-copy">英小文字 <small>a-z</small></span>
+              <span class="option-copy">&#33521;&#23567;&#25991;&#23383; <small>a-z</small></span>
               <input id="lower" type="checkbox" checked><span class="switch"></span>
             </label>
             <label class="option">
-              <span class="option-copy">数字 <small>0-9</small></span>
+              <span class="option-copy">&#25968;&#23383; <small>0-9</small></span>
               <input id="numbers" type="checkbox" checked><span class="switch"></span>
             </label>
             <label class="option">
-              <span class="option-copy">記号 <small>!@#$%...</small></span>
+              <span class="option-copy">&#35352;&#21495; <small>!@#$%...</small></span>
               <input id="symbols" type="checkbox" checked><span class="switch"></span>
             </label>
             <label class="option">
-              <span class="option-copy">紛らわしい文字を除外 <small>O 0 I l 1</small></span>
+              <span class="option-copy">&#32027;&#12425;&#12431;&#12375;&#12356;&#25991;&#23383;&#12434;&#38500;&#22806; <small>O 0 I l 1</small></span>
               <input id="excludeAmbiguous" type="checkbox"><span class="switch"></span>
             </label>
           </div>
@@ -397,24 +397,24 @@
       </div>
 
       <p class="error" id="errorMessage" role="alert"></p>
-      <button class="generate" id="generateButton" type="button">新しいパスワードを生成</button>
+      <button class="generate" id="generateButton" type="button">&#26032;&#12375;&#12356;&#12497;&#12473;&#12527;&#12540;&#12489;&#12434;&#29983;&#25104;</button>
 
       <div class="setting-card history-card">
         <div class="history-head">
-          <h2 class="card-title" style="margin:0">今回の生成履歴</h2>
-          <button class="clear-btn" id="clearHistory" type="button">履歴を消去</button>
+          <h2 class="card-title" style="margin:0">&#20170;&#22238;&#12398;&#29983;&#25104;&#23653;&#27508;</h2>
+          <button class="clear-btn" id="clearHistory" type="button">&#23653;&#27508;&#12434;&#28040;&#21435;</button>
         </div>
-        <div id="history"><div class="empty">まだ履歴はありません</div></div>
+        <div id="history"><div class="empty">&#12414;&#12384;&#23653;&#27508;&#12399;&#12354;&#12426;&#12414;&#12379;&#12435;</div></div>
       </div>
 
-      <p class="security-note"><span aria-hidden="true">&#9670;</span>生成処理はすべてブラウザ内で行われ、外部には送信されません。</p>
+      <p class="security-note"><span aria-hidden="true">&#9670;</span>&#29983;&#25104;&#20966;&#29702;&#12399;&#12377;&#12409;&#12390;&#12502;&#12521;&#12454;&#12470;&#20869;&#12391;&#34892;&#12431;&#12428;&#12289;&#22806;&#37096;&#12395;&#12399;&#36865;&#20449;&#12373;&#12428;&#12414;&#12379;&#12435;&#12290;</p>
     </section>
   </main>
 
-  <div class="toast" id="toast" role="status" aria-live="polite">コピーしました</div>
+  <div class="toast" id="toast" role="status" aria-live="polite">&#12467;&#12500;&#12540;&#12375;&#12414;&#12375;&#12383;</div>
 
   <script>
-    // パスワード生成に使う文字セット
+    // \u30d1\u30b9\u30ef\u30fc\u30c9\u751f\u6210\u306b\u4f7f\u3046\u6587\u5b57\u30bb\u30c3\u30c8
     const CHARACTER_SETS = {
       upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       lower: "abcdefghijklmnopqrstuvwxyz",
@@ -435,7 +435,7 @@
     const histories = [];
     let toastTimer;
 
-    // 暗号学的に安全な乱数を、指定範囲内で偏りなく取得
+    // \u6697\u53f7\u5b66\u7684\u306b\u5b89\u5168\u306a\u4e71\u6570\u3092\u3001\u6307\u5b9a\u7bc4\u56f2\u5185\u3067\u504f\u308a\u306a\u304f\u53d6\u5f97
     function secureRandom(max) {
       if (max <= 0) return 0;
       const limit = Math.floor(4294967296 / max) * max;
@@ -467,17 +467,17 @@
           : CHARACTER_SETS[id]);
     }
 
-    // 選択した各文字種を最低1文字ずつ含めて生成
+    // \u9078\u629e\u3057\u305f\u5404\u6587\u5b57\u7a2e\u3092\u6700\u4f4e1\u6587\u5b57\u305a\u3064\u542b\u3081\u3066\u751f\u6210
     function generatePassword(addToHistory = true) {
       const selectedSets = getSelectedSets();
       const length = Number(lengthRange.value);
 
       if (!window.crypto || !window.crypto.getRandomValues) {
-        errorMessage.textContent = "このブラウザでは安全な乱数生成を利用できません。";
+        errorMessage.textContent = "\u3053\u306e\u30d6\u30e9\u30a6\u30b6\u3067\u306f\u5b89\u5168\u306a\u4e71\u6570\u751f\u6210\u3092\u5229\u7528\u3067\u304d\u307e\u305b\u3093\u3002";
         return;
       }
       if (selectedSets.length === 0) {
-        errorMessage.textContent = "使用する文字を1種類以上選んでください。";
+        errorMessage.textContent = "\u4f7f\u7528\u3059\u308b\u6587\u5b57\u30921\u7a2e\u985e\u4ee5\u4e0a\u9078\u3093\u3067\u304f\u3060\u3055\u3044\u3002";
         generateButton.disabled = true;
         return;
       }
@@ -496,13 +496,13 @@
 
     function updateStrength(length, poolSize) {
       const entropy = length * Math.log2(Math.max(poolSize, 1));
-      let label = "弱い";
+      let label = "\u5f31\u3044";
       let width = 22;
       let color = "#ff6c7a";
-      if (entropy >= 100) { label = "非常に強い"; width = 100; color = "#42e8e0"; }
-      else if (entropy >= 70) { label = "強い"; width = 78; color = "#73e48f"; }
-      else if (entropy >= 45) { label = "標準"; width = 55; color = "#ffd166"; }
-      strengthLabel.textContent = label + "（約" + Math.floor(entropy) + "ビット）";
+      if (entropy >= 100) { label = "\u975e\u5e38\u306b\u5f37\u3044"; width = 100; color = "#42e8e0"; }
+      else if (entropy >= 70) { label = "\u5f37\u3044"; width = 78; color = "#73e48f"; }
+      else if (entropy >= 45) { label = "\u6a19\u6e96"; width = 55; color = "#ffd166"; }
+      strengthLabel.textContent = label + "\uff08\u7d04" + Math.floor(entropy) + "\u30d3\u30c3\u30c8\uff09";
       strengthLabel.style.color = color;
       strengthBar.style.width = width + "%";
       strengthBar.style.background = color;
@@ -522,7 +522,7 @@
         document.execCommand("copy");
         helper.remove();
       }
-      showToast("コピーしました");
+      showToast("\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f");
     }
 
     function showToast(message) {
@@ -544,7 +544,7 @@
       if (histories.length === 0) {
         const empty = document.createElement("div");
         empty.className = "empty";
-        empty.textContent = "まだ履歴はありません";
+        empty.textContent = "\u307e\u3060\u5c65\u6b74\u306f\u3042\u308a\u307e\u305b\u3093";
         historyBox.appendChild(empty);
         return;
       }
@@ -557,7 +557,7 @@
         const button = document.createElement("button");
         button.className = "history-copy";
         button.type = "button";
-        button.textContent = "コピー";
+        button.textContent = "\u30b3\u30d4\u30fc";
         button.addEventListener("click", () => copyText(password));
         row.append(text, button);
         historyBox.appendChild(row);
@@ -574,7 +574,7 @@
         const hasSelection = getSelectedSets().length > 0;
         generateButton.disabled = !hasSelection;
         if (hasSelection) generatePassword(false);
-        else errorMessage.textContent = "使用する文字を1種類以上選んでください。";
+        else errorMessage.textContent = "\u4f7f\u7528\u3059\u308b\u6587\u5b57\u30921\u7a2e\u985e\u4ee5\u4e0a\u9078\u3093\u3067\u304f\u3060\u3055\u3044\u3002";
       });
     });
 
@@ -584,7 +584,7 @@
     document.getElementById("clearHistory").addEventListener("click", () => {
       histories.length = 0;
       renderHistory();
-      showToast("履歴を消去しました");
+      showToast("\u5c65\u6b74\u3092\u6d88\u53bb\u3057\u307e\u3057\u305f");
     });
 
     generatePassword(true);
